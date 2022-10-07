@@ -1,0 +1,48 @@
+.social {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.social__item {
+    flex-basis: calc((100% - 10px*3)/4);
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: var(--icon-social);
+
+    transition: background-color 250ms var(--cubic),
+    color 250ms var(--cubic);
+
+    &:hover, 
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
+
+    &--footer {
+        color: var(--primary-white-color);
+        background-color: var(--icon-footer-social-bgc);
+
+        transition: background-color 250ms var(--cubic);
+    }
+
+}
+
+.social__icon {
+    fill: currentColor;
+
+    &--footer {
+        fill: var(--primary-white-color);
+    }
+}
+
+
