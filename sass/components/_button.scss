@@ -83,8 +83,9 @@
 
 // FOOTER subscribe BTN
 .subscribe__button {
-    position: relative;
+
     display: flex;
+    justify-content: center;
     align-items: center;
 
     padding: 10px 32px;
@@ -98,9 +99,6 @@
 }
 
 .subscribe__icon {
-    position: absolute;
-
-    right: 28px;
     margin-left: 10px;
 }
 
@@ -113,7 +111,7 @@
     &-item {
         margin-right: 8px;
         margin-bottom: 15px;
-        
+
     }
     
 

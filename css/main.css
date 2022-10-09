@@ -933,12 +933,9 @@ img {
   display: block;
 }
 
-.subscribe__form {
-  display: flex;
-}
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .subscribe__form {
-    display: block;
+    display: flex;
     text-align: center;
   }
 }
@@ -1196,8 +1193,8 @@ img {
 }
 
 .subscribe__button {
-  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 10px 32px;
   transition: background-color 250ms var(--cubic);
@@ -1207,8 +1204,6 @@ img {
 }
 
 .subscribe__icon {
-  position: absolute;
-  right: 28px;
   margin-left: 10px;
 }
 
