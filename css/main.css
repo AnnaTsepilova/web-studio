@@ -938,6 +938,7 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .subscribe__form {
+    display: block;
     text-align: center;
   }
 }
@@ -1213,11 +1214,36 @@ img {
 
 .projects__filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.projects__filter-item + .projects__filter-item {
-  margin-left: 8px;
+.projects__filter-item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .projects__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .projects__filter-item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .projects__filter-item + .projects__filter-item {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .projects__filter-item + .projects__filter-item {
+    margin-left: 8px;
+  }
 }
 
 .projects__filter-btn {
@@ -1240,9 +1266,21 @@ img {
 }
 
 .projects__card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .projects__card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .projects__card-wrapper {
@@ -1269,11 +1307,30 @@ img {
 }
 
 .projects__card-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 450px;
   transition: box-shadow 250ms var(--cubic);
+}
+.projects__card-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .projects__card-item:hover, .projects__card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .projects__card-item {
+    width: 345px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__card-item {
+    width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+.projects__card-img {
+  width: 100%;
 }
 
 .projects__card-link {

@@ -1,7 +1,20 @@
 .projects__card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: block;
+       
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
 }
 
 .projects__card-wrapper {
@@ -32,7 +45,12 @@
 
 
 .projects__card-item {
-    flex-basis: calc((100% - 60px)/3);
+
+    width: 450px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
     transition: box-shadow 250ms var(--cubic);
 
     &:hover,
@@ -42,7 +60,26 @@
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    @media screen and (min-width: 768px) {
+        width: 345px;
+        flex-basis: calc((100% - 30px*1)/2);
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        flex-basis: calc((100% - 30px*2)/3);
+        
+
+    }
 }
+
+.projects__card-img {
+    width: 100%;
+}
+
+
 
 .projects__card-link {
     display: flex;
