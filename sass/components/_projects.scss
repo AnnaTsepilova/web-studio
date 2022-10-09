@@ -46,7 +46,8 @@
 
 .projects__card-item {
 
-    width: 450px;
+    width: 100%;
+ 
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -61,14 +62,23 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
+    @media screen and (min-width: 480px) {
+        width: 450px;
+
+        flex-basis: calc((100% - 30px*1)/2);
+
+    }
+
     @media screen and (min-width: 768px) {
         width: 345px;
+ 
         flex-basis: calc((100% - 30px*1)/2);
 
     }
 
     @media screen and (min-width: 1200px) {
         width: 370px;
+ 
         flex-basis: calc((100% - 30px*2)/3);
         
 
@@ -77,9 +87,8 @@
 
 .projects__card-img {
     width: 100%;
+    height: auto;
 }
-
-
 
 .projects__card-link {
     display: flex;

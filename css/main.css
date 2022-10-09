@@ -332,12 +332,9 @@ img {
 .container {
   min-width: 320px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -353,6 +350,7 @@ img {
     width: 1200px;
   }
 }
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -573,7 +571,7 @@ img {
 }
 
 .features__item {
-  width: 450px;
+  width: 100%;
 }
 .features__item:not(:last-child) {
   margin-bottom: 30px;
@@ -710,6 +708,11 @@ img {
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 479px) {
+  .team__item {
+    width: 100%;
+  }
+}
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -843,6 +846,11 @@ img {
   transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
   outline: transparent;
 }
+@media screen and (max-width: 479px) {
+  .clients__link {
+    width: 100%;
+  }
+}
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -941,10 +949,10 @@ img {
 }
 
 .subscribe__input {
-  width: 358px;
+  min-width: 290px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid var(--footer-subscribe-border);
   box-shadow: var(--btn-shadow);
   border-radius: 4px;
@@ -959,9 +967,19 @@ img {
 .subscribe__input:focus, .subscribe__input:hover {
   border: 1px solid var(--accent-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 768px) {
   .subscribe__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
     margin: 0 auto 20px auto;
   }
 }
@@ -1202,6 +1220,16 @@ img {
 .subscribe__button:hover, .subscribe__button:focus {
   background-color: var(--accent-color-hover);
 }
+@media screen and (max-width: 1199px) {
+  .subscribe__button {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-left: 12px;
+  }
+}
 
 .subscribe__icon {
   margin-left: 10px;
@@ -1302,7 +1330,7 @@ img {
 }
 
 .projects__card-item {
-  width: 450px;
+  width: 100%;
   transition: box-shadow 250ms var(--cubic);
 }
 .projects__card-item:not(:last-child) {
@@ -1310,6 +1338,12 @@ img {
 }
 .projects__card-item:hover, .projects__card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 480px) {
+  .projects__card-item {
+    width: 450px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .projects__card-item {
@@ -1326,6 +1360,7 @@ img {
 
 .projects__card-img {
   width: 100%;
+  height: auto;
 }
 
 .projects__card-link {

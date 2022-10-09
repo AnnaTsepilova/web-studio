@@ -1,5 +1,6 @@
 .team {
     background-color: var(--background-secondary-color);
+
 }
 
 .team__list {
@@ -20,6 +21,12 @@
 }
 
 .team__item {
+    
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
+
     width: 450px;
 
     &:not(:last-child) {
