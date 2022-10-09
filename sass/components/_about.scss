@@ -1,15 +1,22 @@
 .about {
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+
+    }
+
+    display: flex;
     padding-top: 0;
 
     &__list {
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__item {
         position: relative;
     }
-    
+
     &__overlay {
         position: absolute;
         bottom: 0;

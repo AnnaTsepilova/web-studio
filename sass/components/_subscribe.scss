@@ -5,6 +5,11 @@
 .subscribe__form {
     display: flex;
 
+    @media screen and (max-width: 1199px) {      
+        text-align: center;
+    
+    }
+
 }
 
 .subscribe__input {
@@ -13,6 +18,7 @@
 
     padding: 15px 16px;
     margin-right: 12px;
+    
 
     border: 1px solid var(--footer-subscribe-border);
     box-shadow: var(--btn-shadow);
@@ -32,6 +38,13 @@
     &:hover {
         border: 1px solid var(--accent-color);
     }
+
+    @media screen and (max-width: 1199px) {
+        
+        width: 450px;
+        margin: 0 auto 20px auto;
+
+    }           
 }
 
 
