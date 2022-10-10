@@ -141,12 +141,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
         margin-bottom: 50px;
-        &-item+&-item {
-            margin-left: 8px;
-        }
+
     }
 }
 
