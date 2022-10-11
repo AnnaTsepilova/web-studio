@@ -20,7 +20,7 @@
                 <nav class="nav-flex">
                     <a class="logo" href="./index.html" target="_self">Web<span class="page-header__logo">Studio</span></a>
                     
-                    <button type="button" class="menu-toggle">
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                         <svg width="40" height="40" aria-label="Перемикач відкриття меню">
                             <use class="icon-menu" href="./images/icons.svg#icon-mob-menu"></use>
                         </svg>
@@ -328,174 +328,196 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            
-            <!-- Футер -->
-            <footer class="footer">
-                <div class="container footer__container">
-                    <div class="footer__wraper">
-                        
-                        <div class="footer--left">
-                            <a class="logo" href="./index.html" target="_self">Web<span class="page-footer__logo">Studio</span>
-                            </a>
-                            <address class="footer__address">
-                                <a class="footer__contacts" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk&authuser=0"
-                                    target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                                <a class="footer__contacts footer__contacts--color" href="mailto:info@devstudio.com" >info@devstudio.com</a>
-                                <a class="footer__contacts footer__contacts--color" href="tel:+380961111111" >+38 096 111 11 11</a>
-                            </address>
-                        </div>
+            </section>          
+        
+        </main>
 
-                        <div class="footer__social">
-                            <p class="footer__title">приєднуйтесь</p>
-                            <ul class="social">
-                                <li class="social__item">
-                                    <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                                        <svg class="social__icon--footer" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer" aria-label="twitter">
-                                        <svg class="social__icon--footer" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-                                        <svg class="social__icon--footer" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                                        <svg class="social__icon--footer" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="footer__subscribe">
-                            <p class="footer__title">Підпишіться на розсилку</p>
-                        
-                            <form class="subscribe__form">
-                                <label class="hidden" for="subscribe_email">Пошта</label>
-                                <input class="subscribe__input" type="email" name="subscribe-email" id="subscribe_email" placeholder="E-mail" />
-                        
-                                <button class="button subscribe__button" type="submit">Підписатися
-                                    <svg class="subscribe__icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-footer-send"></use>
-                                    </svg>
-                                </button>
-                        
-                            </form>
-                        </div>
-                        
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__wraper">
+        
+                    <div class="footer--left">
+                        <a class="logo" href="./index.html" target="_self">Web<span class="page-footer__logo">Studio</span>
+                        </a>
+                        <address class="footer__address">
+                            <a class="footer__contacts"
+                                href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk&authuser=0"
+                                target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                            <a class="footer__contacts footer__contacts--color"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="footer__contacts footer__contacts--color" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </address>
                     </div>
-                </div>           
-            </footer>
-
-            <!-- МОБІЛЬНЕ МЕНЮ -->
-
-            <div class="mobile-menu__container js-menu-container" id="mobile-menu">
-
-                <button type="button" class="menu-toggle">
-                    <svg width="40" height="40" aria-label="Перемикач відкриття меню">
-                        <use class="icon-cross" href="./images/icons.svg#icon-menu-close"></use>
-                    </svg>
-                </button>
-            
+        
+                    <div class="footer__social">
+                        <p class="footer__title">приєднуйтесь</p>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer"
+                                    aria-label="instagram">
+                                    <svg class="social__icon--footer" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer"
+                                    aria-label="twitter">
+                                    <svg class="social__icon--footer" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer"
+                                    aria-label="facebook">
+                                    <svg class="social__icon--footer" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__link--footer" target="_blank" rel="noopener noreferrer"
+                                    aria-label="linkedin">
+                                    <svg class="social__icon--footer" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer__subscribe">
+                        <p class="footer__title">Підпишіться на розсилку</p>
+        
+                        <form class="subscribe__form">
+                            <label class="hidden" for="subscribe_email">Пошта</label>
+                            <input class="subscribe__input" type="email" name="subscribe-email" id="subscribe_email"
+                                placeholder="E-mail" />
+        
+                            <button class="button subscribe__button" type="submit">Підписатися
+                                <svg class="subscribe__icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-footer-send"></use>
+                                </svg>
+                            </button>
+        
+                        </form>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+        
+        <!-- МОБІЛЬНЕ МЕНЮ -->
+        
+        <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+        
+            <button type="button" class="menu-toggle menu-toggle__close js-close-menu">
+                <svg width="40" height="40" aria-label="Перемикач відкриття меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+        
+            <div class="mobile-menu">
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item"><a class="mobile-nav__link current" href="./index.html">Студія</a></li>
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакти</a></li>
-            
+        
                 </ul>
-                <ul class="mobile-contacts__list">
-                    <li class="mobile-contacts__item">
-                        <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                    <li class="mobile-contacts__item">
-                        <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
-                            info@devstudio.com
-                        </a>
-                    </li>
-                </ul>
-                <ul class="mobile-social__list">
-                    <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Instagram</a></li>
-                    <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Twitter</a></li>
-                    <li class="mobile-social__item"> <a class="mobile-social__link" href="#">Facebook</a></li>
-                    <li class="mobile-social__item"> <a class="mobile-social__link" href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-
-            <!-- МОДАЛЬНЕ ВІКНО -->
-            
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="modal__close-btn">
-                        <svg class="modal__close-icon" width="18" height="18" data-modal-close>
-                            <use href="./images/icons.svg#icon-close-modal-btn"></use>
-                        </svg>
-                    </button>
-                  
-                    <form class="request-form">
-                        <h3 class="request-form__title">Залиште свої дані, ми вам передзвонимо</h3>
-                        <label class="request-form__label" for="user_name">Ім'я</label>
-                        <div class="request-form__field">
-                            <input class="request-form__input" type="text" name="user-name" id="user_name" placeholder=" " required />
-                            <svg class="request-form__field-icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-user-name"></use>
-                            </svg>
-                        </div>
-
-                        <label class="request-form__label" for="user_tel">Телефон</label>
-                        <div class="request-form__field">
-                            <input class="request-form__input" type="tel" name="user-tel" id="user_tel" placeholder=" " required />
-                            <svg class="request-form__field-icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-phone-number"></use>
-                            </svg>
-                        </div>
-
-                        <label class="request-form__label" for="user_mail">Пошта</label>
-                        <div class="request-form__field">
-                            <input class="request-form__input" type="email" name="user-mail" id="user_mail" placeholder=" " required />
-                            <svg class="request-form__field-icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-email-input"></use>
-                            </svg>
-                        </div>                 
-                                                              
-                        <label class="request-form__label" for="comment">Коментар</label>
-                        <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
-                                   
-                        <div class="request-form__terms">
-                            
-                            <input class="terms__input hidden" type="checkbox" name="terms" id="terms" required>
-                            <label class="terms__label" for="terms">
-                                <svg class="terms__label-icon checkbox-icon" width="16" height="15">
-                                    <use href="/images/icons.svg#checkbox-bl"></use>
-                                </svg>
-                                <span class="terms__label-text">Погоджуюся з розсилкою та приймаю
-                                    <a class="terms__label-link" href="#" target="_blank">Умови договору</a>
-                                </span>
-                            </label>
-     
-                        </div>     
-                        
-                        <button class="button modal__button" type="submit">Відправити</button>
-                                            
-                    </form>
+                <div class="mobile-contacts__wrapper">
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-social">
+                        <li class="mobile-social__item"> 
+                            <a class="mobile-social__link" href="#" rel="noopener noreferrer" aria-label="instagram">Instagram</a>
+                        </li>
+                        <li class="mobile-social__item"> 
+                            <a class="mobile-social__link" href="#" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+                        </li>
+                        <li class="mobile-social__item"> 
+                            <a class="mobile-social__link" href="#" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                        </li>
+                        <li class="mobile-social__item"> 
+                            <a class="mobile-social__link" href="#" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         
-        </main>
+        </div>
+        
+        <!-- МОДАЛЬНЕ ВІКНО -->
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal__close-btn">
+                    <svg class="modal__close-icon" width="18" height="18" data-modal-close>
+                        <use href="./images/icons.svg#icon-close-modal-btn"></use>
+                    </svg>
+                </button>
+        
+                <form class="request-form">
+                    <h3 class="request-form__title">Залиште свої дані, ми вам передзвонимо</h3>
+                    <label class="request-form__label" for="user_name">Ім'я</label>
+                    <div class="request-form__field">
+                        <input class="request-form__input" type="text" name="user-name" id="user_name" placeholder=" "
+                            required />
+                        <svg class="request-form__field-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-user-name"></use>
+                        </svg>
+                    </div>
+        
+                    <label class="request-form__label" for="user_tel">Телефон</label>
+                    <div class="request-form__field">
+                        <input class="request-form__input" type="tel" name="user-tel" id="user_tel" placeholder=" " required />
+                        <svg class="request-form__field-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone-number"></use>
+                        </svg>
+                    </div>
+        
+                    <label class="request-form__label" for="user_mail">Пошта</label>
+                    <div class="request-form__field">
+                        <input class="request-form__input" type="email" name="user-mail" id="user_mail" placeholder=" "
+                            required />
+                        <svg class="request-form__field-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email-input"></use>
+                        </svg>
+                    </div>
+        
+                    <label class="request-form__label" for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+        
+                    <div class="request-form__terms">
+        
+                        <input class="terms__input hidden" type="checkbox" name="terms" id="terms" required>
+                        <label class="terms__label" for="terms">
+                            <svg class="terms__label-icon checkbox-icon" width="16" height="15">
+                                <use href="/images/icons.svg#checkbox-bl"></use>
+                            </svg>
+                            <span class="terms__label-text">Погоджуюся з розсилкою та приймаю
+                                <a class="terms__label-link" href="#" target="_blank">Умови договору</a>
+                            </span>
+                        </label>
+
+                    </div>
+        
+                    <button class="button modal__button" type="submit">Відправити</button>
+        
+                </form>
+            </div>
+        </div>
 
         <script src="./js/modal.js"></script>
         <script src="./js/mobil-menu.js"></script>
