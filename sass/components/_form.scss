@@ -150,7 +150,7 @@
 
     &-icon {
         position: relative;
-        top: 2px;
+        top: 3px;
         flex-shrink: 0;
         border: 2px solid var(--title-text-color);
         border-radius: 2px;
@@ -162,6 +162,11 @@
             background-size 250ms var(--cubic),
             background-origin 250ms var(--cubic);
     }
+    
+    @media screen and (max-width: 479px) {
+        display: inline-block;
+        align-items: baseline;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -169,14 +174,19 @@
         letter-spacing: 0.03em;
 
     }
+
+
 }
 
 .terms__input:checked+.terms__label .terms__label-icon {
+    
     border-color: var(--accent-color);
     background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: border-box;
+
+
 }
 
 
