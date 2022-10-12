@@ -451,7 +451,7 @@ img {
   display: flex;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .nav-flex {
     width: 100%;
     justify-content: space-between;
@@ -462,7 +462,7 @@ img {
   display: flex;
   margin-left: 93px;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .site-nav {
     display: none;
   }
@@ -532,6 +532,11 @@ img {
   opacity: 0;
   transition: opacity 250ms var(--cubic);
 }
+@media screen and (max-width: 1199.98px) {
+  .site-nav__link--accent::after {
+    bottom: -2px;
+  }
+}
 
 .site-nav__link--accent.current::after,
 .site-nav__link--accent:hover::after,
@@ -539,12 +544,12 @@ img {
   opacity: 1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .contacts-nav {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts-nav {
     display: block;
     padding-top: 21px;
@@ -599,22 +604,52 @@ img {
   padding: 118px 0;
   max-width: 1600px;
   height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-480@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: var(--background-hero-color);
 }
-@media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-480@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-480@3x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-768@1x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-768@2x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) and (min-device-pixel-ratio: 3), screen and (min-width: 480px) and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 288dpi), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 3dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-768@3x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__overlay {
     padding: 200px 0;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-1200@1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-1200@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-bg-1200@3x.jpg");
   }
 }
 
@@ -708,7 +743,7 @@ img {
   display: flex;
   padding-top: 0;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .about {
     display: none;
   }
@@ -767,7 +802,7 @@ img {
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .team__item {
     width: 100%;
   }
@@ -905,7 +940,7 @@ img {
   transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
   outline: transparent;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .clients__link {
     width: 100%;
   }
@@ -941,7 +976,7 @@ img {
   justify-content: center;
   gap: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__wraper {
     text-align: center;
   }
@@ -966,7 +1001,7 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer--left {
     margin-right: 105px;
   }
@@ -1060,7 +1095,7 @@ img {
   pointer-events: none;
   visibility: hidden;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .backdrop {
     padding: 94px 15px;
   }
@@ -1239,7 +1274,7 @@ img {
   fill: transparent;
   transition: border-color 250ms var(--cubic), background-image 250ms var(--cubic), background-repeat 250ms var(--cubic), background-size 250ms var(--cubic), background-origin 250ms var(--cubic);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .terms__label {
     display: inline-block;
     align-items: baseline;
@@ -1335,7 +1370,7 @@ img {
 .subscribe__button:hover, .subscribe__button:focus {
   background-color: var(--accent-color-hover);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__button {
     margin: 0 auto;
   }

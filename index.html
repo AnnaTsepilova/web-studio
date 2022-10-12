@@ -91,9 +91,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-
-            
+            </section>         
 
             <!-- Чим ми займаємося -->
             <section class="section about">
@@ -101,19 +99,46 @@
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="about__list">
                         <li class="about__item">
-                            <img class="about__img" src="./images/img1.jpg" alt="Людина набирає код на планшеті" width="370">
+                            <picture>
+                                <source srcset="./images/features/img1-1200@1x.jpg 1x,
+                                ./images/features/img1-1200@2x.jpg 2x,
+                                ./images/features/img1-1200@3x.jpg 3x"
+                                type="image/jpeg">
+                                
+                                <img class="about__img"                         
+                                src="./images/features/img1-1200@1x.jpg" 
+                                alt="Людина набирає код на планшеті">
+                            </picture>
                             <div class="about__overlay">
                                 <h3 class="about__text">Десктопні додатки</h3>
                             </div>
                         </li>
                         <li class="about__item">
-                            <img class="about__img" src="./images/img2.jpg" alt="Людина з телефоном за ноутбуком" width="370">
+                            <picture>
+                                <source srcset="./images/features/img2-1200@1x.jpg 1x,
+                                ./images/features/img2-1200@2x.jpg 2x,
+                                ./images/features/img2-1200@3x.jpg 3x" 
+                                type="image/jpeg">
+                                
+                                <img class="about__img" 
+                                src="./images/features/img2-1200@1x.jpg"
+                                alt="Людина з телефоном за ноутбуком">
+                            </picture>
                             <div class="about__overlay">
                                 <h3 class="about__text">Мобільні додатки</h3>
                             </div>
                         </li>
                         <li class="about__item">
-                            <img class="about__img" src="./images/img3.jpg" alt="Планшет з зображенням кольорової сітки" width="370">
+                            <picture>
+                                <source srcset="./images/features/img3-1200@1x.jpg 1x,
+                                ./images/features/img3-1200@2x.jpg 2x,
+                                ./images/features/img3-1200@3x.jpg 3x" 
+                                type="image/jpeg">
+                                
+                                <img class="about__img" 
+                                src="./images/features/img3-1200@1x.jpg" 
+                                alt="Планшет з зображенням кольорової сітки" width="370">
+                            </picture>
                             <div class="about__overlay">
                                 <h3 class="about__text">Дизайнерські рішення</h3>
                             </div>
@@ -128,7 +153,30 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item team__item--shadow">
-                            <img class="team__img" src="./images/igor-demyanenko.jpg" alt="Ігор Дем'яненко" width="270">
+                            <picture>
+                                <source  
+                                srcset="./images/team/igor-demyanenko-480@1x.jpg 1x, 
+                                ./images/team/igor-demyanenko-480@2x.jpg 2x,
+                                ./images/team/igor-demyanenko-480@3x.jpg 3x" 
+                                media="(max-width: 767.99px)"
+                                type="image/jpeg"/>
+
+                                <source srcset="./images/team/igor-demyanenko-1200@1x.jpg 1x, 
+                                ./images/team/igor-demyanenko-1200@2x.jpg 2x,
+                                ./images/team/igor-demyanenko-1200@3x.jpg 3x" 
+                                media="(min-width: 1200px)"
+                                type="image/jpeg"/>
+
+                                <source  
+                                srcset="./images/team/igor-demyanenko-768@1x.jpg 1x, 
+                                ./images/team/igor-demyanenko-768@2x.jpg 2x,
+                                ./images/team/igor-demyanenko-768@3x.jpg 3x" 
+                                media="(min-width: 768px)"
+                                type="image/jpeg"/>
+                                
+                                <img class="team__img" src="./images/team/igor-demyanenko-1200@1x.jpg" alt="Ігор Дем'яненко">
+                            
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__member--name">Ігор Дем'яненко</h3>
                                 <p class="team__member--position">Product Designer</p>
@@ -165,7 +213,24 @@
                             </div>
                         </li>
                         <li class="team__item team__item--shadow">
-                            <img class="team__img" src="./images/olga-repina.jpg" alt="Ольга Рєпіна" width="270">
+                            <picture>
+                                <source srcset="./images/team/olga-repina-480@1x.jpg 1x, 
+                                ./images/team/olga-repina-480@2x.jpg 2x,
+                                ./images/team/olga-repina-480@3x.jpg 3x" media="(max-width: 767.99px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/olga-repina-1200@1x.jpg 1x, 
+                                ./images/team/olga-repina-1200@2x.jpg 2x,
+                                ./images/team/olga-repina-1200@3x.jpg 3x" media="(min-width: 1200px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/olga-repina-768@1x.jpg 1x, 
+                                ./images/team/olga-repina-768@2x.jpg 2x,
+                                ./images/team/olga-repina-768@3x.jpg 3x" media="(min-width: 768px)"
+                                type="image/jpeg" />
+                                
+                                <img class="team__img" src="./images/team/olga-repina-1200@1x.jpg" alt="Ольга Рєпіна">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__member--name">Ольга Рєпіна</h3>
                                 <p class="team__member--position">Frontend Developer</p>
@@ -202,7 +267,24 @@
                             </div>
                         </li>
                         <li class="team__item team__item--shadow">
-                            <img class="team__img" src="./images/mykola-tarasov.jpg" alt="Микола Тарасов" width="270">
+                            <picture>
+                                <source srcset="./images/team/mykola-tarasov-480@1x.jpg 1x, 
+                                ./images/team/mykola-tarasov-480@2x.jpg 2x,
+                                ./images/team/mykola-tarasov-480@3x.jpg 3x" media="(max-width: 767.99px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/mykola-tarasov-1200@1x.jpg 1x, 
+                                ./images/team/mykola-tarasov-1200@2x.jpg 2x,
+                                ./images/team/mykola-tarasov-1200@3x.jpg 3x" media="(min-width: 1200px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/mykola-tarasov-768@1x.jpg 1x, 
+                                ./images/team/mykola-tarasov-768@2x.jpg 2x,
+                                ./images/team/mykola-tarasov-768@3x.jpg 3x" media="(min-width: 768px)"
+                                type="image/jpeg" />
+                                
+                                <img class="team__img" src="./images/team/mykola-tarasov-1200@1x.jpg" alt="Микола Тарасов">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__member--name">Микола Тарасов</h3>
                                 <p class="team__member--position">Marketing</p>
@@ -239,7 +321,24 @@
                             </div>
                         </li>
                         <li class="team__item team__item--shadow">
-                            <img class="team__img" src="./images/myhaylo-yermakov.jpg" alt="Михайло Єрмаков" width="270">
+                            <picture>
+                                <source srcset="./images/team/myhaylo-yermakov-480@1x.jpg 1x, 
+                                ./images/team/myhaylo-yermakov-480@2x.jpg 2x,
+                                ./images/team/myhaylo-yermakov-480@3x.jpg 3x" media="(max-width: 767.99px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/myhaylo-yermakov-1200@1x.jpg 1x, 
+                                ./images/team/myhaylo-yermakov-1200@2x.jpg 2x,
+                                ./images/team/myhaylo-yermakov-1200@3x.jpg 3x" media="(min-width: 1200px)"
+                                type="image/jpeg" />
+                                
+                                <source srcset="./images/team/myhaylo-yermakov-768@1x.jpg 1x, 
+                                ./images/team/myhaylo-yermakov-768@2x.jpg 2x,
+                                ./images/team/myhaylo-yermakov-768@3x.jpg 3x" media="(min-width: 768px)"
+                                type="image/jpeg" />
+                                
+                                <img class="team__img" src="./images/team/myhaylo-yermakov-1200@1x.jpg" alt="Михайло Єрмаков">
+                            </picture>
                             <div class="team__member">
                                 <h3 class="team__member--name">Михайло Єрмаков</h3>
                                 <p class="team__member--position">UI Designer</p>
@@ -520,6 +619,9 @@
         </div>
 
         <script src="./js/modal.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
         <script src="./js/mobil-menu.js"></script>
     </body>
 </html>
